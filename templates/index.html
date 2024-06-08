@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Series Generator</title>
+    <link rel="stylesheet" href="static\styles.css">
+</head>
+<body>
+    <h1>Fibonacci Series Generator</h1>
+    <form method="POST">
+        <label for="number">Enter a number:</label>
+        <input type="number" id="number" name="number" required min="1">
+        <button type="submit">Generate</button>
+    </form>
+    {% if fibonacci_series %}
+        <h2>Fibonacci Series up to {{ n }} terms:</h2>
+        <p>{{ fibonacci_series }}</p>
+    {% endif %}
+</body>
+</html>
